@@ -47,16 +47,25 @@
     margin-top: 50px;
     margin-right: 20px;
     font-weight: 700;
-    font-size: 14pt;
+    font-size: 1.1704rem;
     align-items: center;
     display: flex;
+  }
+  .error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 0.8rem;
+  }
+  .template {
+    display: none;
   }
 }
 body {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  font-family: Spartan;
+  font-family: 'Spartan', 'Work Sans', sans-serif;
 
   background-color: var(--body-bg-color);
 }
@@ -89,28 +98,31 @@ main {
 /*-------------MAIN--------------*/
 #title {
   font-weight: 700;
-  font-size: 24pt;
+  font-size: 2.0064rem;
   font-family: 'Work Sans';
   color: var(--title-color);
 }
 #subtitle {
   font-weight: 700;
-  font-size: 14pt;
+  font-size: 1.1704rem;
   color: var(--text-color);
 }
 #textContent {
-  font-size: 14pt;
+  font-size: 1.1704rem;
   color: var(--text-color);
+  width: 100%;
+  margin-right: 10px;
 }
 /*----FORM----*/
 form {
   align-items: center;
   display: flex;
   margin-top: 17px;
+  position: relative;
 }
 .label {
   color: var(--form-color);
-  font-size: 14pt;
+  font-size: 1.1704rem;
   font-weight: 700;
 }
 .form {
@@ -124,6 +136,9 @@ form {
   position: absolute;
   margin-top: 17px;
 }
+#register-form {
+  display: flex;
+}
 #inputEmail {
   width: 70vw;
   height: 48px;
@@ -131,6 +146,7 @@ form {
   margin: 0;
   padding: 0 0 0 5px;
   margin-left: 5px;
+  position: relative;
 }
 .aling-form {
   align-items: center;
@@ -150,9 +166,34 @@ form {
   padding: 0;
   margin: 0;
 }
+/*------------VALIDAÇÕES-------------*/
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 55px;
+  font-size: 0.8rem;
+}
+.template {
+  display: none;
+}
+
+/*----BOTÃO----*/
+button {
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
 button .buttonSend {
   border: 0;
   padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  align-items: center;
+  justify-content: center;
+  padding: 22%;
 }
 .buttonArrow {
   color: var(--bg-button-color);
@@ -161,7 +202,7 @@ button .buttonSend {
   margin-top: 50px;
   margin-right: 20px;
   font-weight: 700;
-  font-size: 14pt;
+  font-size: 1.1704rem;
   align-items: center;
   display: flex;
   text-shadow: 1px 1px 2px var(--body-bg-color);
@@ -171,6 +212,7 @@ button .buttonSend {
   height: 48px;
   box-shadow: 5px 5px 5px var(--body-bg-color);
 }
+
 /*-------------FOOTER--------------*/
 /*
 .background {

@@ -42,19 +42,20 @@
           <label for="form">Insira seu e-mail:</label>
         </div>
         <div class="boxGreen"></div>
-        <form action="" class="shadow">
-          <input type="email" name="email" id="inputEmail" placeholder="  oi@rocketseat.com.br">
-          <button class="buttonSend">
+        <form action="" class="shadow" id="register-form">
+          <input type="email" name="email" id="inputEmail" placeholder="  oi@rocketseat.com.br" data-min-length="3" data-required data-email-validate>
+          <button type="submit" class="buttonSend" id="btn-submit">
             <img src="./assets/send.svg" alt="buttonSend" class="icon">
           </button>
         </form>
+        <p class="error-validation template"></p>
         <button class="buttonArrow">
             deixe-me ler primeiro
             <img src="./assets/arrow-right.svg" alt="arrow" />
         </button>
         </div>
-      </section>
-      
+      </section>  
     </main>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
